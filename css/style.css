@@ -1,0 +1,142 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #eee none no-repeat fixed top left;
+  background-image: -webkit-gradient(linear, 100% 0%, 100% 100%, from(#dfdedf), color-stop(25%, #f2f2f2), color-stop(75%, #f2f2f2), to(#dfdedf));
+  background-image: -moz-linear-gradient(top, #dfdedf, #f2f2f2, #f2f2f2, #dfdedf);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  color: #555555;
+  font-weight: 400;
+}
+.main_container {
+  min-height: 600px;
+}
+.white {
+  color: #333;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  -webkit-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.1); /* Saf3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+          box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.1); /* Opera 10.5, IE9, FF4+, Chrome 6+, iOS 5 */
+  text-align: center;
+}
+.white p {
+  margin: 10px 0;
+}
+
+.button {
+	background: #FC8C00;
+	border: none;
+	border-bottom: 1px solid #ae6000;
+    color: #FFFFFF;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom:20px;
+    font-size: 25px;
+    padding: 7px 12px;
+    display: inline-block;
+    font: 14px/20px Roboto, Helvetica, Arial, sans-serif;
+    cursor: pointer;
+}
+.button:hover {
+	background: #ffa330;
+	border-bottom: 1px solid #d57600;
+}
+.button:active {
+	background: #ffae4a;
+}
+
+h1 {
+  color: #000;
+}
+
+a:link, a:visited, a:active {
+  color: #0099cc;
+}
+a:hover {
+  text-decoration: none;
+  color: #0085b1;
+}
+
+.to_40 { margin-top:40px; }
+.to_20 { margin-top:20px; }
+.bo_40 { margin-bottom: 40px; }
+.bo_20 { margin-bottom: 20px; }
+
+#title {
+  margin-top: 40px;
+}
+#title h1 {
+  background: #00a6fc;
+  color: #fff;
+  font-size: 35px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+#title h3 {
+  font-weight: normal;
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.video {
+  position: relative;
+  height:260px;
+  background:#e4e4e4;
+}
+.video h4 {
+  position: absolute;
+  min-width: 300px;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  padding: 7px 14px 7px 7px;
+  background: rgba(0, 166, 252, 0.5);
+  color: #fff;
+}
+
+.orange { background: #FC8C00; }
+.blue { background: #00a6fc; }
+.grey { background: #555; }
+.red { background: #FC192D; }
+.yellow { background: #C9C314; }
+
+.workshop_title {
+  color:#fff;
+  padding: 7px 0 0 0;
+  cursor: pointer;
+}
+.workshop_title h1 {
+  color:#fff;
+  padding: 0 7px;
+}
+.workshop_title.grey h5 {
+  color:#ccc;
+  padding: 0 7px 7px 7px;
+}
+.workshop_title.orange h5 {
+  color:#555;
+  padding: 0 7px 7px 7px;
+}
+
+.date {
+  float:right;
+  background:#fff;
+  color:#333;
+  padding:5px;
+  font-size:15px;
+  font-weight: bold;
+}
+
+.workshop_content {
+  background: #fff;
+  display: none;
+}
+.workshop_content p {
+  padding: 14px 7px;
+}

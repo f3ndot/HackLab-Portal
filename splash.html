@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>HackLab Public WiFi Portal</title>
+<link rel="stylesheet" href="css/reset.css" />
+<link rel="stylesheet" href="css/text.css" />
+<link rel="stylesheet" href="css/960.css" />
+<link rel="stylesheet" href="css/style.css" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.workshop_title')
+      .append('<div class="blue remove_me" style="color:#fff;font-weight:500;display:none;"><p style="padding:4px">Click me for event details</p></div>')
+      .hover(function () {
+        $(this).not('.expanded').children('.remove_me').filter(':not(:animated)').slideDown();
+      }, function() {
+        $(this).children('.remove_me').slideUp();
+      })
+      .click(function() {
+        if($(this).hasClass('expanded')) {
+          $(this).removeClass('expanded');
+          $(this).next('.workshop_content').slideUp();
+        } else {
+          $(this).addClass('expanded');
+          $(this).children('.remove_me').slideUp();
+          $(this).next('.workshop_content').slideDown();
+        }
+      });
+
+    $('button.button').click(function () {
+      $(this).html('Connecting...');
+    });
+
+  });
+</script>
+</head>
+<body>
+<div class="container_12 main_container">
+  <div id="title" class="grid_6 bo_40">
+    <h1>HackLab Toronto</h1>
+    <h3>Public WiFi to the Kensington Market community</h3>
+    <hr />
+  </div>
+  <div class="clear"></div>
+
+  <h1 class="grid_12" style="font-weight:400;margin-top:10px">Connect To WiFi</h1>
+  <div class="grid_12 to_20 white">
+    <p>HackLab Toronto provides this public WiFi access as a courtesy to the community.</p>
+    <p>Please be respectful with your usage.</p>
+    <button class="button">Connect to &ldquo;HackLab&rdquo;</button>
+  </div>
+
+  <h1 class="grid_12" style="font-weight:400;margin-top:60px">Upcoming Events</h1>
+  <div class="grid_12 to_20 workshop_title grey">
+    <div class="date">January 29th, 2012</div>
+    <h1>Basic Electronics Workshop Series</h1>
+    <h5>By Andrew Kilpatrick</h5>
+  </div>
+  <div class="grid_12 workshop_content">
+    <p>
+      Details here.
+    </p>
+  </div>
+
+  <div class="grid_12 to_20 workshop_title grey">
+    <div class="date">January 25th, 2012</div>
+    <h1>Unpatched Tuesdays</h1>
+    <h5>HackLab Open House</h5>
+  </div>
+  <div class="grid_12 workshop_content">
+    <p>
+      Details here.
+    </p>
+  </div>
+
+  <div class="grid_12 to_20 workshop_title grey">
+    <div class="date">January 10th, 2012</div>
+    <h1>Stitch &lsquo;n&rsquo; Bitch</h1>
+    <h5>By Jammies</h5>
+  </div>
+  <div class="grid_12 workshop_content">
+    <p>
+      Details here.
+    </p>
+  </div>
+
+</div>
+<div class="container_12">
+
+  <div class="grid_12 to_40">
+    <hr class="bo_20" />
+    <p>HackLab.TO is a community space with a diverse membership, including artists, computer programmers, web designers, and hardware hackers. It is inspired by the philosophies of the global hackerspaces movement which encourages people to socialize, share knowledge, and work together on their projects. We use the term &ldquo;hacking&rdquo; in the MIT sense. We make things, repurpose things, program things, invent things, and make lights blink!</p>
+    
+    <p style="margin-top:10px">We're located at 170A Baldwin Street, and are open to the public every Tuesday from 5:30pm until 10pm.</p>
+  </div>
+
+</div>
+<!-- end .container_12 -->
+</body>
+</html>
