@@ -1,1 +1,6 @@
 For OpenWRT's Nodogsplash wifi portal software. I'm lazy with my README's.
+
+Decently recently demo: http://www.justinbull.ca/private/hacklab-portal/
+
+TODO:
+- Make the Upcoming Events section scrape the HackLab.TO Google Calendar
