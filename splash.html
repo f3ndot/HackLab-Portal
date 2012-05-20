@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8" />
-<title>HackLab Public WiFi Portal</title>
+<title>$gatewayname</title>
 <link rel="stylesheet" href="css/reset.css" />
 <link rel="stylesheet" href="css/text.css" />
 <link rel="stylesheet" href="css/960.css" />
@@ -29,7 +29,7 @@
         }
       });
 
-    $('button.button').click(function () {
+    $('.button').click(function () {
       $(this).html('Connecting...');
     });
 
@@ -49,7 +49,11 @@
   <div class="grid_12 to_20 white">
     <p>HackLab Toronto provides this public WiFi access as a courtesy to the community.</p>
     <p>Please be respectful with your usage.</p>
-    <button class="button">Connect to &ldquo;HackLab&rdquo;</button>
+    <form action="$authaction" method="GET">
+      <input type="hidden" name="tok" value="$tok" />
+      <input type="hidden" name="redir" value="$redir" />
+      <input type="submit" class="button" value="Connect to &ldquo;HackLab&rdquo;" />
+    </form>
   </div>
 
   <h1 class="grid_12" style="font-weight:400;margin-top:60px">Upcoming Events</h1>
