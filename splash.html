@@ -8,31 +8,11 @@
 <link rel="stylesheet" href="css/960.css" />
 <link rel="stylesheet" href="css/style.css" />
 <script type="text/javascript" src="jquery.min.js"></script>
-<script type="text/javascript" src="jquery-ui.min.js"></script>
 <script type="text/javascript">
   $(document).ready(function() {
-    $('.workshop_title')
-      .append('<div class="blue remove_me" style="color:#fff;font-weight:500;display:none;"><p style="padding:4px">Click me for event details</p></div>')
-      .hover(function () {
-        $(this).not('.expanded').children('.remove_me').filter(':not(:animated)').slideDown();
-      }, function() {
-        $(this).children('.remove_me').slideUp();
-      })
-      .click(function() {
-        if($(this).hasClass('expanded')) {
-          $(this).removeClass('expanded');
-          $(this).next('.workshop_content').slideUp();
-        } else {
-          $(this).addClass('expanded');
-          $(this).children('.remove_me').slideUp();
-          $(this).next('.workshop_content').slideDown();
-        }
-      });
-
     $('.button').click(function () {
       $(this).html('Connecting...');
     });
-
   });
 </script>
 </head>
@@ -45,7 +25,7 @@
   </div>
   <div class="clear"></div>
 
-  <h1 class="grid_12" style="font-weight:400;margin-top:10px">Connect To WiFi</h1>
+  <h1 class="grid_12" style="font-weight:400;margin-top:30px">Connect To WiFi</h1>
   <div class="grid_12 to_20 white">
     <p>HackLab Toronto provides this public WiFi access as a courtesy to the community.</p>
     <p>Please be respectful with your usage.</p>
@@ -54,40 +34,6 @@
       <input type="hidden" name="redir" value="$redir" />
       <input type="submit" class="button" value="Connect to &ldquo;HackLab&rdquo;" />
     </form>
-  </div>
-
-  <h1 class="grid_12" style="font-weight:400;margin-top:60px">Upcoming Events</h1>
-  <div class="grid_12 to_20 workshop_title grey">
-    <div class="date">January 29th, 2012</div>
-    <h1>Basic Electronics Workshop Series</h1>
-    <h5>By Andrew Kilpatrick</h5>
-  </div>
-  <div class="grid_12 workshop_content">
-    <p>
-      Details here.
-    </p>
-  </div>
-
-  <div class="grid_12 to_20 workshop_title grey">
-    <div class="date">January 25th, 2012</div>
-    <h1>Unpatched Tuesdays</h1>
-    <h5>HackLab Open House</h5>
-  </div>
-  <div class="grid_12 workshop_content">
-    <p>
-      Details here.
-    </p>
-  </div>
-
-  <div class="grid_12 to_20 workshop_title grey">
-    <div class="date">January 10th, 2012</div>
-    <h1>Stitch &lsquo;n&rsquo; Bitch</h1>
-    <h5>By Jammies</h5>
-  </div>
-  <div class="grid_12 workshop_content">
-    <p>
-      Details here.
-    </p>
   </div>
 
 </div>
